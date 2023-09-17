@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:layout_centerInParent="true"
+        android:format="%s"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chronometer"
+        android:layout_centerHorizontal="true"
+        android:text="Iniciar"/>
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_button"
+        android:layout_centerHorizontal="true"
+        android:text="Detener"
+        android:visibility="gone"/> <!-- Ocultamos el botón de detener al inicio -->
+
+    <Button
+        android:id="@+id/resume_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stop_button"
+        android:layout_centerHorizontal="true"
+        android:text="Reanudar"
+        android:visibility="gone"/> <!-- Ocultamos el botón de reanudar al inicio -->
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resume_button"
+        android:layout_centerHorizontal="true"
+        android:text="Limpiar"/> <!-- Botón para restablecer el cronómetro a cero -->
+
+</RelativeLayout>
